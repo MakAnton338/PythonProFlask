@@ -1,5 +1,7 @@
 from flask import Flask, request
 from faker import Faker
+import csv
+
 app = Flask(__name__)
 
 
@@ -24,7 +26,6 @@ def generate_users():
     return '<pre>{}</pre>'.format(res)
 
 
-@app.route("/mean/")
 
 
 
